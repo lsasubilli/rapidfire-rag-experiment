@@ -1,21 +1,21 @@
 # RAG Experiment Summary — NFCorpus (Retrieval-First)
 
 ## Links
-- **Notebook:** https://github.com/lsasubilli/rapidfireai-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb  
-- **Repo:** https://github.com/lsasubilli/rapidfireai-rag-experiment  
+- **Notebook:** https://github.com/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb  
+- **Repo:** https://github.com/lsasubilli/rapidfire-rag-experiment  
 
 ### Screenshots
 - **Results Table**  
-  ![Results Table](https://raw.githubusercontent.com/lsasubilli/rapidfireai-rag-experiment/main/screenshots/results_table.png)  
+  ![Results Table](https://raw.githubusercontent.com/lsasubilli/rapidfire-rag-experiment/main/screenshots/results_table.png)  
 
 - **Metrics Trends**  
-  ![Metrics Graphs](https://raw.githubusercontent.com/lsasubilli/rapidfireai-rag-experiment/main/screenshots/metrics_graphs.png)
+  ![Metrics Graphs](https://raw.githubusercontent.com/lsasubilli/rapidfire-rag-experiment/main/screenshots/metrics_graphs.png)
 
 - **Experiment Progress (Interactive Control)**  
-  ![Experiment Progress](https://raw.githubusercontent.com/lsasubilli/rapidfireai-rag-experiment/main/screenshots/experiment_progress_ic.png)
+  ![Experiment Progress](https://raw.githubusercontent.com/lsasubilli/rapidfire-rag-experiment/main/screenshots/experiment_progress_ic.png)
 
 - **Configuration Grid**  
-  ![Experiment Configs](https://raw.githubusercontent.com/lsasubilli/rapidfireai-rag-experiment/main/screenshots/experiment_set_configs.png)
+  ![Experiment Configs](https://raw.githubusercontent.com/lsasubilli/rapidfire-rag-experiment/main/screenshots/experiment_set_configs.png)
 
 ---
 
