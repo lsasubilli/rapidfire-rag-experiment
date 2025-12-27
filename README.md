@@ -1,6 +1,8 @@
 # RAG Experiment Summary — NFCorpus (Retrieval-First)
 
 ## Links
+- ![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)
+https://colab.research.google.com/github/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb
 - **Notebook:** https://github.com/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb  
 - **Repo:** https://github.com/lsasubilli/rapidfire-rag-experiment  
 
@@ -130,4 +132,5 @@ RapidFire AI enabled fast, reproducible RAG experimentation by:
 - Supporting interactive control (clone, stop, modify) mid-experiment
 
 This workflow closely mirrors how real AI teams evaluate and harden RAG pipelines before deployment.
+
 
