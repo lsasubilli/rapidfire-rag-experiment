@@ -1,16 +1,31 @@
 # RAG Experiment Summary — NFCorpus (Retrieval-First)
 
+> **TL;DR**  
+> We designed a controlled retrieval-first RAG experiment on NFCorpus to study how chunk size and retrieval depth interact under strict context limits.  
+> The best-performing and most deployable configuration uses **256-token chunks with k=8 retrieval**, achieving the highest ranking quality (NDCG@5) while avoiding prompt overflows.
+
+---
+
 ## Links
 
-[ Open in Colab ](https://colab.research.google.com/github/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb
+)
 
-[ View Notebook ](https://github.com/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb)
+[![View Notebook](https://img.shields.io/badge/View-Notebook-blue)](
+https://github.com/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb
+)
 
-[ GitHub Repository ](https://github.com/lsasubilli/rapidfire-rag-experiment)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black)](
+https://github.com/lsasubilli/rapidfire-rag-experiment
+)
 
 > Click **Open in Colab** to reproduce the experiment end-to-end.
 
-### Screenshots
+---
+
+## Screenshots
+
 - **Results Table**  
   ![Results Table](https://raw.githubusercontent.com/lsasubilli/rapidfire-rag-experiment/main/screenshots/results_table.png)  
 
@@ -72,7 +87,7 @@ We ran **controlled experiments**, varying **one RAG parameter at a time** while
 
 | Chunk Size | Retrieval k | Precision | Recall | F1 | NDCG@5 | MRR | Time |
 |-----------:|------------:|----------:|-------:|---:|-------:|----:|-----:|
-| **256** | **8** | **0.476** | 0.059 | 0.096 | **0.148** | 0.467 | 196s |
+| **256** | **8** | **0.476** | 0.059 | 0.096 | **0.148** | 0.467 | **176s** |
 | 128 | 8 | 0.471 | 0.045 | 0.078 | 0.124 | **0.492** | 87s |
 | 128 | 16 | 0.422 | **0.071** | **0.110** | 0.115 | 0.421 | **74s** |
 
@@ -80,11 +95,13 @@ We ran **controlled experiments**, varying **one RAG parameter at a time** while
 
 ## Winning Configuration (Best Tradeoff)
 
-**Chunk Size = 256, Retrieval k = 8, top_n = 2**
+- **Chunk Size:** 256  
+- **Retrieval k:** 8  
+- **Reranker top_n:** 2  
 
 **Why this wins:**
-- Highest **NDCG@5**, indicating better ranking quality
-- Strong precision with stable retrieval behavior
+- Achieves the **highest NDCG@5**, indicating better ranking quality
+- Maintains strong precision with stable retrieval behavior
 - Avoids prompt overflow failures seen in deeper retrieval + large chunks
 - Latency remains acceptable given the ranking quality gains
 
@@ -112,7 +129,7 @@ Across multiple runs, we observed **stable directional trends**:
 - Increasing retrieval depth improves recall but can degrade ranking precision
 - Optimal performance requires **joint tuning** of chunk size and retrieval depth
 
-Even with small sample sizes, the **relative ordering of configurations remained consistent**, reinforcing the robustness of the conclusions.
+Even with small sample sizes, the **relative ordering of configurations remained consistent**, reinforcing the robustness of the observed tradeoffs.
 
 ---
 
@@ -136,5 +153,4 @@ RapidFire AI enabled fast, reproducible RAG experimentation by:
 - Supporting interactive control (clone, stop, modify) mid-experiment
 
 This workflow closely mirrors how real AI teams evaluate and harden RAG pipelines before deployment.
-
 
