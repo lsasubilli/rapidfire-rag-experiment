@@ -1,10 +1,14 @@
 # RAG Experiment Summary — NFCorpus (Retrieval-First)
 
 ## Links
-- ![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)
-https://colab.research.google.com/github/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb
-- **Notebook:** https://github.com/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb  
-- **Repo:** https://github.com/lsasubilli/rapidfire-rag-experiment  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/github/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb)
+
+[![View Notebook](https://img.shields.io/badge/View-Notebook-blue)]
+(https://github.com/lsasubilli/rapidfire-rag-experiment/blob/main/notebooks/nfcorpus_rag_experiment.ipynb)
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black)]
+(https://github.com/lsasubilli/rapidfire-rag-experiment)
 
 ### Screenshots
 - **Results Table**  
