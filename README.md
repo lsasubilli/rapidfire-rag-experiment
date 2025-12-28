@@ -107,6 +107,9 @@ We ran **controlled experiments**, varying **one RAG parameter at a time** while
 
 This configuration provides the **best balance between ranking quality and system stability**, which is critical for real-world RAG deployments.
 
+While chunk_size=256, k=8 achieves the highest ranking quality (NDCG@5),
+chunk_size=128, k=16 offers a faster and more robust configuration under strict latency constraints.
+
 ---
 
 ## Failure Case Insight
