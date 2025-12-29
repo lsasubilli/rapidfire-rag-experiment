@@ -64,6 +64,10 @@ NFCorpus is a realistic biomedical QA benchmark where **retrieval errors directl
 - **Compute:** Google Colab (free tier, T4 GPU), ~15–20 min runtime  
 
 ---
+## RAG Pipeline Overview
+
+![RAG Pipeline Overview](https://raw.githubusercontent.com/lsasubilli/rapidfire-rag-experiment/main/screenshots/rag_final.drawio.png)
+---
 
 ## Experiments (Controlled Changes)
 
@@ -105,10 +109,10 @@ We ran **controlled experiments**, varying **one RAG parameter at a time** while
 - Avoids prompt overflow failures seen in deeper retrieval + large chunks
 - Latency remains acceptable given the ranking quality gains
 
-This configuration provides the **best balance between ranking quality and system stability**, which is critical for real-world RAG deployments.
-
 While chunk_size=256, k=8 achieves the highest ranking quality (NDCG@5),
 chunk_size=128, k=16 offers a faster and more robust configuration under strict latency constraints.
+
+This configuration provides the **best balance between ranking quality and system stability**, which is critical for real-world RAG deployments.
 
 ---
 
@@ -156,4 +160,5 @@ RapidFire AI enabled fast, reproducible RAG experimentation by:
 - Supporting interactive control (clone, stop, modify) mid-experiment
 
 This workflow closely mirrors how real AI teams evaluate and harden RAG pipelines before deployment.
+
 
